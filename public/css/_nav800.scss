@@ -1,0 +1,30 @@
+@media screen and (max-width: 800px) {
+
+    /* MENU STYLES */
+    .topbar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: auto;
+
+        .company {
+            margin: auto;
+        }
+
+        .main-nav {
+            margin: 0 auto;
+            font-size: 1rem;
+            ul {
+                margin: 0;
+            }
+
+            li {
+                padding: 20px;
+                }
+            }
+
+            ul li a:first-child {
+                margin-left: 0;
+            }
+        }
+}

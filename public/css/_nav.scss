@@ -1,0 +1,115 @@
+a {
+    text-decoration: none;
+
+}
+.colortop {
+    background-color: #EEE;
+    position: sticky;
+    top: 0;
+}
+
+.topbar {
+    //!! let's put a flexbox here to align company name and logo with mainnav
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+
+
+
+    .company {
+        display: flex;
+        margin-top: 5px;
+
+        img {
+            height: 62px;
+            width: 59px;
+        }
+
+        //!! let's put a flex in here for company logo and name
+        span {
+            margin-top: 20px;
+            margin-left: 10px;
+            font-family: 'Iceberg', cursive;
+            font-size: 24px;
+            font-weight: bolder;
+            color: #5F8CA7;
+        }
+
+    }
+
+    .company {
+        font-size: 3rem;
+        font-weight: 300;
+        transform: translateX(-100rem);
+        animation: slideIn .5s forwards;
+
+        span {
+            color: #0B507A;
+        }
+    }
+
+    .main-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 900;
+
+        ul {
+            display: flex;
+
+            li {
+                //!! SLide in effect for navigation bar at bigger screen
+
+                list-style: none;
+                transform: translateX(100rem);
+                animation: slideIn .5s forwards;
+
+                @keyframes slideIn {
+                    from {}
+
+                    to {
+                        transform: translateX(0);
+                    }
+                }
+
+                &:nth-child(1) {
+                    animation-delay: 0s;
+                }
+
+                &:nth-child(2) {
+                    animation-delay: .2s;
+                }
+
+                &:nth-child(3) {
+                    animation-delay: .4s;
+                }
+
+                &:nth-child(4) {
+                    animation-delay: .6s;
+                }
+
+                a {
+                    padding: 1rem 0;
+                    margin: 0 3rem;
+                    position: relative;
+                    letter-spacing: 2px;
+
+                    &:hover {
+                        //!!Final hover effect
+                        text-decoration: line-through;
+                    }
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}

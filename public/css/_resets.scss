@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin : 0;
+}
+
+//!!Laptop+
+
+.except-footer-container {
+  width    : 90%;
+  max-width: 1200px;
+  margin   : auto;
+}
+
+
+
+// .mainNav ul {
+//   padding: 0;
+// }
