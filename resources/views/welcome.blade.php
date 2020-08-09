@@ -4,7 +4,6 @@
 
 
 
-
 @endsection
 
 {{-- end of content section  --}}

@@ -1,6 +1,6 @@
 @extends('layouts.layout')
 
-@section('content')
+@section('navmain')
 <div class="flex-center position-ref full-height">
     @if (Route::has('login'))
     <div class="top-right links">
@@ -27,7 +27,10 @@
         </div>
 
         <!--NAVIGATION Start-->
-        <nav class="main-nav"> {{--Check nav.scss --}}
+        <nav class="main-nav"> 
+            
+            {{--Check nav.scss --}}
+
             <ul>
                 <li><a href="#">PRICING</a></i></li>
                 <li><a href="#">OUR WORK</a></i></li>
@@ -36,12 +39,12 @@
             </ul>
         </nav>
 
-        <nav class="social">
+        <nav class="social-nav">
             <ul>
-                <li><a href="https://www.facebook.com/OctaPhor" class="fa fa-facebook"></a></li>
-                <li><a href="https://www.twitter.com/OctaPhor" class="fa fa-twitter"></a></li>
-                <li><a href="https://www.linkedin.com/OctaPhor" class="fa fa-linkedin"></a></li>
-                <li><a href="https://www.dribbble.com/OctaPhor" class="fa fa-dribbble"></a></li>
+                <li><i class="fab fa-facebook-square"></i><a href="https://www.facebook.com/OctaPhor"</a></li>
+                <li><i class="fab fa-twitter-square"></i><a href="https://www.twitter.com/OctaPhor"</a></li>
+                <li><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/OctaPhor"></a></li>
+                <li><i class="fab fa-dribbble-square"></i><a href="https://www.dribbble.com/OctaPhor"></a></li>
 
             </ul>
         </nav>
@@ -51,6 +54,6 @@
 </section>
     {{--* Topbar section ends  --}}
 
-
+@yield('content')
 
     @endsection

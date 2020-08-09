@@ -3,28 +3,90 @@
     /* MENU STYLES */
     .topbar {
         display: flex;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
+        flex-direction: column;
         justify-content: space-around;
         margin: auto;
 
         .company {
-            margin: auto;
+            margin: 20px 50px;
+            font-size: 1.5rem;
         }
 
         .main-nav {
-            margin: 0 auto;
-            font-size: 1rem;
-            ul {
-                margin: 0;
-            }
 
-            li {
-                padding: 20px;
+            margin: 0 auto;
+
+            ul {
+
+                li {
+                    padding: 20px;
+                    margin: auto;
+
+                    a {
+
+                        &:first-child {
+                            margin-left: -10px;
+                        }
+
+                        &:last-child {
+                            margin-right: 0px;
+                        }
+
+                        &:hover {
+                            //!!Final hover effect
+                            text-decoration: line-through;
+                        }
+                    }
                 }
             }
+        }
 
-            ul li a:first-child {
-                margin-left: 0;
+        .social-nav {
+
+            ul {
+                margin-top: -170px;
+                margin-left: 500px;
+                font-size: 20px;
+            }
+
+        }
+
+    }
+}
+
+@media screen and (max-width: 580px) {
+
+    /* MENU STYLES */
+    .topbar {
+        .company {
+            margin: 10px auto;
+        }
+
+        .main-nav {
+
+            margin: 0 auto;
+            font-size: 0.7rem;
+
+            ul {
+
+                li {
+                    a {
+                        &:first-child {
+                            margin-left: -30px;
+                        }
+
+                        &:last-child {
+                            margin-right: 0px;
+                        }
+                    }
+                }
             }
         }
+
+        .social-nav {
+            display: none;
+        }
+
+    }
 }
