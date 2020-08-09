@@ -36,6 +36,16 @@
             </ul>
         </nav>
 
+        <nav class="social">
+            <ul>
+                <li><a href="https://www.facebook.com/OctaPhor" class="fa fa-facebook"></a></li>
+                <li><a href="https://www.twitter.com/OctaPhor" class="fa fa-twitter"></a></li>
+                <li><a href="https://www.linkedin.com/OctaPhor" class="fa fa-linkedin"></a></li>
+                <li><a href="https://www.dribbble.com/OctaPhor" class="fa fa-dribbble"></a></li>
+
+            </ul>
+        </nav>
+
         
     </div>
 </section>
