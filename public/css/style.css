@@ -43,23 +43,6 @@ a {
   display: -ms-flexbox;
   display: flex;
   margin-top: 5px;
-}
-
-.topbar .company img {
-  height: 62px;
-  width: 59px;
-}
-
-.topbar .company span {
-  margin-top: 20px;
-  margin-left: 10px;
-  font-family: 'Iceberg', cursive;
-  font-size: 24px;
-  font-weight: bolder;
-  color: #5F8CA7;
-}
-
-.topbar .company {
   font-size: 3rem;
   font-weight: 300;
   -webkit-transform: translateX(-100rem);
@@ -68,7 +51,17 @@ a {
           animation: slideIn .5s forwards;
 }
 
+.topbar .company img {
+  height: 62px;
+  width: 59px;
+}
+
 .topbar .company span {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-family: 'Iceberg', cursive;
+  font-size: 24px;
+  font-weight: bolder;
   color: #0B507A;
 }
 
@@ -142,7 +135,7 @@ a {
 
 .topbar .main-nav ul li a {
   padding: 1rem 0;
-  margin: 0 3rem;
+  margin: 0 1rem;
   position: relative;
   letter-spacing: 2px;
 }
@@ -151,11 +144,34 @@ a {
   text-decoration: line-through;
 }
 
+<<<<<<< Updated upstream
 .topbar .main-nav ul li a:last-child {
   margin-right: 0;
+=======
+.topbar .social-nav {
+  -webkit-transform: translateX(-100rem);
+          transform: translateX(-100rem);
+  -webkit-animation: slideIn .5s forwards;
+          animation: slideIn .5s forwards;
 }
 
-@media screen and (max-width: 800px) {
+.topbar .social-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.topbar .social-nav ul li {
+  list-style: none;
+  font-size: 25px;
+}
+
+.topbar .social-nav ul li a {
+  padding: 2px;
+>>>>>>> Stashed changes
+}
+
+@media screen and (max-width: 850px) {
   /* MENU STYLES */
   .topbar {
     display: -webkit-box;
@@ -168,6 +184,17 @@ a {
     margin: auto;
   }
   .topbar .company {
+<<<<<<< Updated upstream
+=======
+    margin: 5px 50px;
+    font-size: 1.5rem;
+  }
+  .topbar .main-nav {
+    margin: 0 auto;
+  }
+  .topbar .main-nav ul li {
+    padding: 20px;
+>>>>>>> Stashed changes
     margin: auto;
   }
   .topbar .main-nav {
@@ -182,6 +209,162 @@ a {
   }
   .topbar ul li a:first-child {
     margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 345px) {
+  /* MENU STYLES */
+  .topbar .main-nav {
+    margin: 0 auto;
+    font-size: 0.7rem;
+  }
+  .topbar .main-nav ul li a {
+    letter-spacing: 0;
+  }
+  .topbar .social-nav {
+    display: none;
+  }
+}
+
+.header-image {
+  background-image: url("/img/Agency header 01 large.png");
+  background-color: #cccccc;
+  height: 75vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: auto;
+}
+
+.header-text {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  margin: 220px 100px;
+}
+
+.header-text h5 {
+  /* WE ARE */
+  position: absolute;
+  width: 150px;
+  height: 44px;
+  left: 15px;
+  top: -50px;
+  font-family: 'Rosario', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 44px;
+  /* identical to box height */
+  color: #000000;
+}
+
+.header-text h3 {
+  /* CREATIVE */
+  position: absolute;
+  width: 404px;
+  height: 82px;
+  left: -15px;
+  top: -15px;
+  font-family: 'Sanchez', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 82px;
+  /* identical to box height */
+  letter-spacing: 0.155em;
+  color: #000000;
+}
+
+.header-text h1 {
+  /* AGENCY */
+  position: absolute;
+  width: 140px;
+  height: 42px;
+  left: 220px;
+  top: 55px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  color: #000000;
+}
+
+.header-text2 h5 {
+  /* GROW &NURTURE */
+  position: absolute;
+  width: 350px;
+  height: 2px;
+  left: 190px;
+  top: 350px;
+  font-family: 'Acme', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1px;
+  /* identical to box height, or 8% */
+  letter-spacing: 0.15em;
+  color: #FFFFFF;
+}
+
+.header-text2 h3 {
+  /* THE IDEAS YOU HAVE */
+  position: absolute;
+  width: 579px;
+  height: 2px;
+  left: 150px;
+  top: 368px;
+  font-family: 'Acme', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1px;
+  /* identical to box height, or 6% */
+  letter-spacing: 0.15em;
+  color: #FFFFFF;
+}
+
+.header-text2 h1 {
+  /* WITH US */
+  position: absolute;
+  visibility: hidden;
+  width: 93px;
+  height: 2px;
+  left: 165px;
+  top: 390px;
+  font-family: 'Acme', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1px;
+  /* identical to box height, or 7% */
+  letter-spacing: 0.15em;
+  color: #FFFFFF;
+}
+
+@media all and (max-width: 1100px) {
+  .header-image {
+    background-image: url("/img/agency header01 small02.png");
+    background-color: #cccccc;
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .header-text {
+    display: none;
+  }
+  .header-text2 {
+    display: none;
   }
 }
 

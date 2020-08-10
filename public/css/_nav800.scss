@@ -1,25 +1,95 @@
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
 
     /* MENU STYLES */
     .topbar {
         display: flex;
+<<<<<<< Updated upstream
         flex-wrap: wrap;
+=======
+        flex-direction: column;
+>>>>>>> Stashed changes
         justify-content: space-around;
         margin: auto;
 
         .company {
+<<<<<<< Updated upstream
             margin: auto;
+=======
+            margin: 5px 50px;
+            font-size: 1.5rem;
+>>>>>>> Stashed changes
         }
 
         .main-nav {
             margin: 0 auto;
+<<<<<<< Updated upstream
             font-size: 1rem;
+=======
+
+            ul {
+                li {
+                    padding: 20px;
+                    margin: auto;
+
+                    a {
+                        &:first-child {
+                            margin-left: -10px;
+                        }
+
+                        &:last-child {
+                            margin-right: 0px;
+                        }
+
+                        &:hover {
+                            //!!Final hover effect
+                            text-decoration: line-through;
+                        }
+                    }
+                }
+            }
+        }
+
+        .social-nav {
+>>>>>>> Stashed changes
             ul {
                 margin: 0;
             }
+<<<<<<< Updated upstream
 
             li {
                 padding: 20px;
+=======
+        }
+    }
+}
+
+
+@media screen and (max-width: 580px) {
+
+    /* MENU STYLES */
+    .topbar {
+        .company {
+            margin: 10px auto;
+        }
+
+        .main-nav {
+
+            margin: 0 auto;
+            font-size: 0.7rem;
+
+            ul {
+
+                li {
+                    a {
+                        &:first-child {
+                            margin-left: -30px;
+                        }
+
+                        &:last-child {
+                            margin-right: 0px;
+                        }
+                    }
+>>>>>>> Stashed changes
                 }
             }
 
@@ -27,4 +97,37 @@
                 margin-left: 0;
             }
         }
+<<<<<<< Updated upstream
 }
+=======
+
+    }
+}
+
+
+@media screen and (max-width: 345px) {
+
+    /* MENU STYLES */
+    .topbar {
+        .main-nav {
+
+            margin: 0 auto;
+            font-size: 0.7rem;
+
+            ul {
+
+                li {
+                    a {
+                        letter-spacing: 0;
+                    }
+                }
+            }
+        }
+
+        .social-nav {
+            display: none;
+        }
+
+    }
+}
+>>>>>>> Stashed changes

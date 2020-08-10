@@ -1,6 +1,5 @@
 a {
     text-decoration: none;
-
 }
 .colortop {
     background-color: #EEE;
@@ -22,6 +21,10 @@ a {
     .company {
         display: flex;
         margin-top: 5px;
+        font-size: 3rem;
+        font-weight: 300;
+        transform: translateX(-100rem);
+        animation: slideIn .5s forwards;
 
         img {
             height: 62px;
@@ -30,25 +33,15 @@ a {
 
         //!! let's put a flex in here for company logo and name
         span {
-            margin-top: 20px;
+            margin-top: 10px;
             margin-left: 10px;
             font-family: 'Iceberg', cursive;
             font-size: 24px;
             font-weight: bolder;
-            color: #5F8CA7;
-        }
-
-    }
-
-    .company {
-        font-size: 3rem;
-        font-weight: 300;
-        transform: translateX(-100rem);
-        animation: slideIn .5s forwards;
-
-        span {
             color: #0B507A;
+
         }
+
     }
 
     .main-nav {
@@ -62,6 +55,8 @@ a {
 
         ul {
             display: flex;
+
+
 
             li {
                 //!! SLide in effect for navigation bar at bigger screen
@@ -78,6 +73,7 @@ a {
                     }
                 }
 
+<<<<<<< Updated upstream
                 &:nth-child(1) {
                     animation-delay: 0s;
                 }
@@ -94,9 +90,11 @@ a {
                     animation-delay: .6s;
                 }
 
+=======
+>>>>>>> Stashed changes
                 a {
                     padding: 1rem 0;
-                    margin: 0 3rem;
+                    margin: 0 1rem;
                     position: relative;
                     letter-spacing: 2px;
 
@@ -105,9 +103,31 @@ a {
                         text-decoration: line-through;
                     }
 
+<<<<<<< Updated upstream
                     &:last-child {
                         margin-right: 0;
                     }
+=======
+
+                }
+            }
+        }
+    }
+
+    .social-nav {
+        transform: translateX(-100rem);
+        animation: slideIn .5s forwards;
+
+        ul {
+            display: flex;
+
+            li {
+                list-style: none;
+                font-size: 25px;
+
+                a {
+                    padding: 2px;
+>>>>>>> Stashed changes
                 }
             }
         }

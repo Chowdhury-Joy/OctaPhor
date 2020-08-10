@@ -1,31 +1,16 @@
 @extends('layouts.layout')
 
-@section('content')
+@section('navmain')
 <div class="flex-center position-ref full-height">
     @if (Route::has('login'))
     <div class="top-right links">
 
-<<<<<<< Updated upstream
         {{-- For perticularly this page we don't need signin or register option --}}
 
         {{-- @auth
                 <a href="{{ url('/home') }}">Home</a>
         @else
         <a href="{{ route('login') }}">Login</a>
-=======
-<div class="header-image">
-    <div class="header-text">
-        <h5>WE ARE</h5>
-        <h3>CREATIVE</h3>
-        <h1>AGENCY</h1>       
-    </div>
-    <div class="header-text2">
-        <h5>GROW & NURTURE</h5>
-        <h3>THE IDEAS YOU HAVE</h3>
-        <h1>TOGETHER</h1>       
-    </div>
-</div>
->>>>>>> Stashed changes
 
         @if (Route::has('register'))
         <a href="{{ route('register') }}">Register</a>
@@ -33,6 +18,8 @@
         @endauth --}}
     </div>
     @endif
+
+
 <section class="colortop">
     <div class="topbar">
 
@@ -41,8 +28,12 @@
             <img src="img/Octaphor logo.png" alt="logo"> <span> OctaPhor </span>
         </div>
 
+
         <!--NAVIGATION Start-->
-        <nav class="main-nav"> {{--Check nav.scss --}}
+        <nav class="main-nav"> 
+            
+            {{--Check nav.scss --}}
+
             <ul>
                 <li><a href="#">PRICING</a></i></li>
                 <li><a href="#">OUR WORK</a></i></li>
@@ -51,11 +42,23 @@
             </ul>
         </nav>
 
+
+        <nav class="social-nav">
+            <ul>
+                <li><i class="fab fa-facebook-square"></i><a href="https://www.facebook.com/OctaPhor"</a></li>
+                <li><i class="fab fa-twitter-square"></i><a href="https://www.twitter.com/OctaPhor"</a></li>
+                <li><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/OctaPhor"></a></li>
+                <li><i class="fab fa-dribbble-square"></i><a href="https://www.dribbble.com/OctaPhor"></a></li>
+
+            </ul>
+        </nav>
+
+        
         
     </div>
 </section>
     {{--* Topbar section ends  --}}
 
-
+@yield('content')
 
     @endsection
