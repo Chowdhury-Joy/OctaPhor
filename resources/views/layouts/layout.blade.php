@@ -33,7 +33,7 @@
 
     <body>
 
-@yield('content')
+@yield('navmain')
 
     </body>
     </html>

@@ -8,7 +8,7 @@
         margin: auto;
 
         .company {
-            margin: 5px 50px;
+            margin: 5px auto;
             font-size: 1.5rem;
         }
 
@@ -17,12 +17,16 @@
 
             ul {
                 li {
-                    padding: 20px;
+                    padding: 30px;
                     margin: auto;
+
+                    &:first-child {
+                        padding-left: -40px;
+                    }
 
                     a {
                         &:first-child {
-                            margin-left: -10px;
+                            margin-left: -30px;
                         }
 
                         &:last-child {
@@ -39,9 +43,7 @@
         }
 
         .social-nav {
-            ul {
-                margin: 0;
-            }
+            display: none;
         }
     }
 }
@@ -57,15 +59,22 @@
 
         .main-nav {
 
-            margin: 0 auto;
-            font-size: 0.7rem;
 
             ul {
 
+                &:first-child {
+                    padding-left: 0px;
+                }
+
                 li {
+                    // margin: 0 auto;
+                    font-size: 0.7rem;
+                    padding: 20px;
+                    margin: auto;
+
                     a {
                         &:first-child {
-                            margin-left: -30px;
+                            margin-left: 30px;
                         }
 
                         &:last-child {
@@ -79,12 +88,11 @@
                 margin-left: 0;
             }
         }
-
     }
 }
 
 
-@media screen and (max-width: 345px) {
+@media screen and (max-width: 437px) {
 
     /* MENU STYLES */
     .topbar {
@@ -96,7 +104,10 @@
             ul {
 
                 li {
+                    padding: 10px;
+
                     a {
+
                         letter-spacing: 0;
                     }
                 }

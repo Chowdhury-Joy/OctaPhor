@@ -161,18 +161,21 @@ a {
     margin: auto;
   }
   .topbar .company {
-    margin: 5px 50px;
+    margin: 5px auto;
     font-size: 1.5rem;
   }
   .topbar .main-nav {
     margin: 0 auto;
   }
   .topbar .main-nav ul li {
-    padding: 20px;
+    padding: 30px;
     margin: auto;
   }
+  .topbar .main-nav ul li:first-child {
+    padding-left: -40px;
+  }
   .topbar .main-nav ul li a:first-child {
-    margin-left: -10px;
+    margin-left: -30px;
   }
   .topbar .main-nav ul li a:last-child {
     margin-right: 0px;
@@ -180,8 +183,8 @@ a {
   .topbar .main-nav ul li a:hover {
     text-decoration: line-through;
   }
-  .topbar .social-nav ul {
-    margin: 0;
+  .topbar .social-nav {
+    display: none;
   }
 }
 
@@ -190,12 +193,16 @@ a {
   .topbar .company {
     margin: 10px auto;
   }
-  .topbar .main-nav {
-    margin: 0 auto;
+  .topbar .main-nav ul:first-child {
+    padding-left: 0px;
+  }
+  .topbar .main-nav ul li {
     font-size: 0.7rem;
+    padding: 20px;
+    margin: auto;
   }
   .topbar .main-nav ul li a:first-child {
-    margin-left: -30px;
+    margin-left: 30px;
   }
   .topbar .main-nav ul li a:last-child {
     margin-right: 0px;
@@ -205,11 +212,14 @@ a {
   }
 }
 
-@media screen and (max-width: 345px) {
+@media screen and (max-width: 437px) {
   /* MENU STYLES */
   .topbar .main-nav {
     margin: 0 auto;
     font-size: 0.7rem;
+  }
+  .topbar .main-nav ul li {
+    padding: 10px;
   }
   .topbar .main-nav ul li a {
     letter-spacing: 0;

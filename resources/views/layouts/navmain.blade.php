@@ -51,10 +51,7 @@
                 <li><i class="fab fa-dribbble-square"></i><a href="https://www.dribbble.com/OctaPhor"></a></li>
 
             </ul>
-        </nav>
-
-        
-        
+        </nav>  
     </div>
 </section>
     {{--* Topbar section ends  --}}
