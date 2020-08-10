@@ -18,6 +18,29 @@
         @endauth --}}
     </div>
     @endif
+
+    @if (Route::has('login'))
+    <div class="top-right links">
+    </div>
+    @endif
+<div class="header-image">
+    <div class="header-text">
+        <h5>WE ARE</h5>
+        <h3>CREATIVE</h3>
+        <h1>AGENCY</h1>       
+    </div>
+    <div class="header-text2">
+        <h5>GROW & NURTURE</h5>
+        <h3>THE IDEAS YOU HAVE</h3>
+        <h1>TOGETHER</h1>       
+    </div>
+</div>
+
+        @if (Route::has('register'))
+        <a href="{{ route('register') }}">Register</a>
+        @endif
+        @endauth --}}
+
 <section class="colortop">
     <div class="topbar">
 
