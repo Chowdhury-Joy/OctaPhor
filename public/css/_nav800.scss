@@ -3,28 +3,17 @@
     /* MENU STYLES */
     .topbar {
         display: flex;
-<<<<<<< Updated upstream
-        flex-wrap: wrap;
-=======
         flex-direction: column;
->>>>>>> Stashed changes
         justify-content: space-around;
         margin: auto;
 
         .company {
-<<<<<<< Updated upstream
-            margin: auto;
-=======
             margin: 5px 50px;
             font-size: 1.5rem;
->>>>>>> Stashed changes
         }
 
         .main-nav {
             margin: 0 auto;
-<<<<<<< Updated upstream
-            font-size: 1rem;
-=======
 
             ul {
                 li {
@@ -50,15 +39,9 @@
         }
 
         .social-nav {
->>>>>>> Stashed changes
             ul {
                 margin: 0;
             }
-<<<<<<< Updated upstream
-
-            li {
-                padding: 20px;
-=======
         }
     }
 }
@@ -89,7 +72,6 @@
                             margin-right: 0px;
                         }
                     }
->>>>>>> Stashed changes
                 }
             }
 
@@ -97,9 +79,6 @@
                 margin-left: 0;
             }
         }
-<<<<<<< Updated upstream
-}
-=======
 
     }
 }
@@ -130,4 +109,3 @@
 
     }
 }
->>>>>>> Stashed changes

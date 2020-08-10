@@ -5,14 +5,6 @@
     @if (Route::has('login'))
     <div class="top-right links">
 
-<<<<<<< Updated upstream
-        {{-- For perticularly this page we don't need signin or register option --}}
-
-        {{-- @auth
-                <a href="{{ url('/home') }}">Home</a>
-        @else
-        <a href="{{ route('login') }}">Login</a>
-=======
 <div class="header-image">
     <div class="header-text">
         <h5>WE ARE</h5>
@@ -25,7 +17,6 @@
         <h1>TOGETHER</h1>       
     </div>
 </div>
->>>>>>> Stashed changes
 
         @if (Route::has('register'))
         <a href="{{ route('register') }}">Register</a>

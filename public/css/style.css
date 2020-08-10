@@ -113,26 +113,6 @@ a {
   }
 }
 
-.topbar .main-nav ul li:nth-child(1) {
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-}
-
-.topbar .main-nav ul li:nth-child(2) {
-  -webkit-animation-delay: .2s;
-          animation-delay: .2s;
-}
-
-.topbar .main-nav ul li:nth-child(3) {
-  -webkit-animation-delay: .4s;
-          animation-delay: .4s;
-}
-
-.topbar .main-nav ul li:nth-child(4) {
-  -webkit-animation-delay: .6s;
-          animation-delay: .6s;
-}
-
 .topbar .main-nav ul li a {
   padding: 1rem 0;
   margin: 0 1rem;
@@ -144,10 +124,6 @@ a {
   text-decoration: line-through;
 }
 
-<<<<<<< Updated upstream
-.topbar .main-nav ul li a:last-child {
-  margin-right: 0;
-=======
 .topbar .social-nav {
   -webkit-transform: translateX(-100rem);
           transform: translateX(-100rem);
@@ -168,7 +144,6 @@ a {
 
 .topbar .social-nav ul li a {
   padding: 2px;
->>>>>>> Stashed changes
 }
 
 @media screen and (max-width: 850px) {
@@ -177,15 +152,15 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     margin: auto;
   }
   .topbar .company {
-<<<<<<< Updated upstream
-=======
     margin: 5px 50px;
     font-size: 1.5rem;
   }
@@ -194,20 +169,38 @@ a {
   }
   .topbar .main-nav ul li {
     padding: 20px;
->>>>>>> Stashed changes
     margin: auto;
+  }
+  .topbar .main-nav ul li a:first-child {
+    margin-left: -10px;
+  }
+  .topbar .main-nav ul li a:last-child {
+    margin-right: 0px;
+  }
+  .topbar .main-nav ul li a:hover {
+    text-decoration: line-through;
+  }
+  .topbar .social-nav ul {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  /* MENU STYLES */
+  .topbar .company {
+    margin: 10px auto;
   }
   .topbar .main-nav {
     margin: 0 auto;
-    font-size: 1rem;
+    font-size: 0.7rem;
   }
-  .topbar .main-nav ul {
-    margin: 0;
+  .topbar .main-nav ul li a:first-child {
+    margin-left: -30px;
   }
-  .topbar .main-nav li {
-    padding: 20px;
+  .topbar .main-nav ul li a:last-child {
+    margin-right: 0px;
   }
-  .topbar ul li a:first-child {
+  .topbar .main-nav ul li a:first-child {
     margin-left: 0;
   }
 }
