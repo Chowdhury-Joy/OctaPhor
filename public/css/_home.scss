@@ -1,8 +1,9 @@
   .header-image {
       background-image: url("/img/Agency header 01 large.png");
       background-color: #cccccc;
-      height: 75vh;
-      background-position: center;
+      height: 80vh;
+      //   background-position: center;
+      //?? NO need to put background position here, bcz it will effect the view; (height:80vh) won't work then
       background-repeat: no-repeat;
       background-size: cover;
       position: relative;
