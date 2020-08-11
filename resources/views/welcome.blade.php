@@ -1,6 +1,7 @@
 @extends('layouts.navmain')
 
 @section('content')
+<div class="header">
 
     <div class="header-image">
     <div class="header-text">
@@ -15,4 +16,15 @@
     </div>
 </div>
 
+</div>
+
+
+
+<div>df</div>
+<div>ff</div>
+<div>fff</div>
+<div>ff</div>
+<div>ff</div>
+<div>ff</div>
+<div>ff</div>
     @endsection

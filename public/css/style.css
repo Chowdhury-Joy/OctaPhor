@@ -21,14 +21,15 @@ a {
 
 .colortop {
   background-color: #EEE;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-}
-
-.topbar {
+  position: fixed;
   max-width: 120rem;
   width: 90%;
+  top: 0;
+  z-index: 1;
+}
+
+.colortop .topbar {
+  width: 95vw;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -36,13 +37,15 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: fixed;
 }
 
-.topbar .company {
+.colortop .topbar .company {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 5px;
+  margin-left: 30px;
   font-size: 3rem;
   font-weight: 300;
   -webkit-transform: translateX(-100rem);
@@ -51,12 +54,12 @@ a {
           animation: slideIn .5s forwards;
 }
 
-.topbar .company img {
+.colortop .topbar .company img {
   height: 62px;
   width: 59px;
 }
 
-.topbar .company span {
+.colortop .topbar .company span {
   margin-top: 10px;
   margin-left: 10px;
   font-family: 'Iceberg', cursive;
@@ -65,7 +68,7 @@ a {
   color: #0B507A;
 }
 
-.topbar .main-nav {
+.colortop .topbar .main-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,13 +84,13 @@ a {
   font-weight: 900;
 }
 
-.topbar .main-nav ul {
+.colortop .topbar .main-nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.topbar .main-nav ul li {
+.colortop .topbar .main-nav ul li {
   list-style: none;
   -webkit-transform: translateX(100rem);
           transform: translateX(100rem);
@@ -113,42 +116,51 @@ a {
   }
 }
 
-.topbar .main-nav ul li a {
+.colortop .topbar .main-nav ul li a {
   padding: 1rem 0;
   margin: 0 1rem;
   position: relative;
   letter-spacing: 2px;
 }
 
-.topbar .main-nav ul li a:hover {
+.colortop .topbar .main-nav ul li a:hover {
   text-decoration: line-through;
 }
 
-.topbar .social-nav {
+.colortop .topbar .social-nav {
   -webkit-transform: translateX(-100rem);
           transform: translateX(-100rem);
   -webkit-animation: slideIn .5s forwards;
           animation: slideIn .5s forwards;
 }
 
-.topbar .social-nav ul {
+.colortop .topbar .social-nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.topbar .social-nav ul li {
+.colortop .topbar .social-nav ul li {
   list-style: none;
   font-size: 25px;
 }
 
-.topbar .social-nav ul li a {
+.colortop .topbar .social-nav ul li a {
   padding: 2px;
 }
 
 @media screen and (max-width: 850px) {
   /* MENU STYLES */
-  .topbar {
+  .colortop {
+    background-color: #EEE;
+    position: relative;
+    max-width: 120rem;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+  }
+  .colortop .topbar {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -159,31 +171,32 @@ a {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     margin: auto;
+    top: 0;
   }
-  .topbar .company {
+  .colortop .topbar .company {
     margin: 5px auto;
     font-size: 1.5rem;
   }
-  .topbar .main-nav {
+  .colortop .topbar .main-nav {
     margin: 0 auto;
   }
-  .topbar .main-nav ul li {
+  .colortop .topbar .main-nav ul li {
     padding: 30px;
     margin: auto;
   }
-  .topbar .main-nav ul li:first-child {
-    padding-left: -40px;
+  .colortop .topbar .main-nav ul li:last-child {
+    padding-right: 0px;
   }
-  .topbar .main-nav ul li a:first-child {
+  .colortop .topbar .main-nav ul a:first-child {
     margin-left: -30px;
   }
-  .topbar .main-nav ul li a:last-child {
+  .colortop .topbar .main-nav ul a:last-child {
     margin-right: 0px;
   }
-  .topbar .main-nav ul li a:hover {
+  .colortop .topbar .main-nav ul a:hover {
     text-decoration: line-through;
   }
-  .topbar .social-nav {
+  .colortop .social-nav {
     display: none;
   }
 }
@@ -229,17 +242,16 @@ a {
   }
 }
 
-.header-image {
+.header .header-image {
   background-image: url("/img/Agency header 01 large.png");
   background-color: #cccccc;
-  height: 80vh;
+  height: 100vh;
   background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
   width: auto;
 }
 
-.header-text {
+.header .header-text {
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -248,11 +260,11 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: fixed;
+  position: absolute;
   margin: 220px 100px;
 }
 
-.header-text h5 {
+.header .header-text h5 {
   /* WE ARE */
   position: absolute;
   width: 150px;
@@ -268,7 +280,7 @@ a {
   color: #000000;
 }
 
-.header-text h3 {
+.header .header-text h3 {
   /* CREATIVE */
   position: absolute;
   width: 404px;
@@ -285,7 +297,7 @@ a {
   color: #000000;
 }
 
-.header-text h1 {
+.header .header-text h1 {
   /* AGENCY */
   position: absolute;
   width: 140px;
@@ -300,7 +312,7 @@ a {
   color: #000000;
 }
 
-.header-text2 h5 {
+.header .header-text2 h5 {
   /* GROW &NURTURE */
   position: absolute;
   width: 350px;
@@ -317,7 +329,7 @@ a {
   color: #FFFFFF;
 }
 
-.header-text2 h3 {
+.header .header-text2 h3 {
   /* THE IDEAS YOU HAVE */
   position: absolute;
   width: 579px;
@@ -334,7 +346,7 @@ a {
   color: #FFFFFF;
 }
 
-.header-text2 h1 {
+.header .header-text2 h1 {
   /* WITH US */
   position: absolute;
   visibility: hidden;
@@ -353,19 +365,20 @@ a {
 }
 
 @media all and (max-width: 1100px) {
-  .header-image {
+  .header .header-image {
     background-image: url("/img/agency header01 small02.png");
     background-color: #cccccc;
     height: 50vh;
+    margin-top: 180px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
   }
-  .header-text {
+  .header .header-text {
     display: none;
   }
-  .header-text2 {
+  .header .header-text2 {
     display: none;
   }
 }
