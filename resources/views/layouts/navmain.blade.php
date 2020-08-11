@@ -20,7 +20,9 @@
     @endif
 
 
-<section class="colortop">
+
+
+    <section class="colortop">
     <div class="topbar">
 
         {{-- We will put a flexbox here to align them in top bar perfectly --}}

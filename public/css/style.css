@@ -245,8 +245,9 @@ a {
 .header .header-image {
   background-image: url("/img/Agency header 01 large.png");
   background-color: #cccccc;
-  height: 100vh;
+  height: 90vh;
   background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
   width: auto;
 }

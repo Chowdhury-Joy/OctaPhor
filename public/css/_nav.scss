@@ -19,9 +19,6 @@ a {
         justify-content: space-between;
         position: fixed;
 
-
-
-
         .company {
             display: flex;
             margin-top: 5px;
@@ -30,7 +27,6 @@ a {
             font-weight: 300;
             transform: translateX(-100rem);
             animation: slideIn .5s forwards;
-
 
             img {
                 height: 62px;
@@ -45,7 +41,6 @@ a {
                 font-size: 24px;
                 font-weight: bolder;
                 color: #0B507A;
-
             }
 
         }
