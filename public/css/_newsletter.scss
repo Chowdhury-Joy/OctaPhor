@@ -1,0 +1,302 @@
+.newsletter {
+    height: 300px;
+    width: 70vw;
+    margin: 0 auto;
+    display: flex;
+    background: #57aa89e5;
+    margin: -10% auto 5%;
+
+    .newsletter-img {
+        width: 35vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #57aa89;
+
+        img {
+            /* email 1 */
+
+            // position: absolute;
+            width: 50%;
+            height: 50%;
+
+            background: url(email.png);
+        }
+    }
+
+    .newsletter-not-img {
+        /* Rectangle 1 */
+        display: grid;
+        grid-auto-rows: 50px 50px 100px;
+        grid-template-columns: repeat(2, 1fr);
+        //!!IMPORTANT PART
+        grid-template-areas: "title title"
+            "text text"
+            "box button";
+        justify-content: center;
+        align-content: center;
+        width: 65vw;
+        grid-gap: 30px;
+
+        .newsletter-title {
+            /* SUBSCRIBE TO OUR NEWSLETTER */
+            grid-area: title;
+            height: 21px;
+            // display: flex;
+            // align-items: center;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 21px;
+            margin: 5px auto;
+            /* identical to box height */
+
+            color: #EEEEEE;
+        }
+
+        .newsletter-text {
+            /* To get regular Update, Tips and promotional offer, Subscribe to our newsletter. We promise not to overwhelm you with unnecessary promotions */
+            grid-area: text;
+            margin: 0px auto;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 14px;
+            justify-content: center;
+            align-items: center;
+            color: #000000;
+            text-align: center;
+        }
+
+
+        .newsletter-box {
+            grid-area: box;
+
+            .nbox {
+                width: 300px;
+                height: 35px;
+                margin-left: 20%;
+            }
+        }
+
+        .newsletter-button {
+            grid-area: button;
+            // padding: 10px 20px;
+
+            font-size: 20px;
+            height: 36px;
+            width: 60px;
+            background-color: white;
+            // border: 2px solid #33c088;
+
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            margin-left: 20%;
+
+            &:hover {
+                transform: translatex(3px);
+            }
+
+        }
+    }
+
+}
+
+
+
+
+@media all and (max-width: 1100px) {
+    .newsletter {
+        width: 90vw;
+    }
+}
+
+
+
+@media all and (max-width: 800px) {
+    .newsletter {
+        width: 95vw;
+
+        .newsletter-img {
+            width: 25vw;
+
+            img {
+                /* email 1 */
+
+                // position: absolute;
+                width: 60%;
+                height: 30%;
+
+
+            }
+        }
+
+        .newsletter-not-img {
+            width: 75vw;
+
+
+            .newsletter-text {
+
+                font-size: 14px;
+
+            }
+        }
+    }
+}
+
+
+
+@media all and (max-width: 500px) {
+    .newsletter {
+        width: 95vw;
+        height: 30vh;
+        margin-top: -35%;
+
+        .newsletter-img {
+            display: none;
+        }
+
+        .newsletter-not-img {
+            width: 100vw;
+            grid-auto-rows: 30px 30px 50px;
+            grid-gap: 5px;
+            margin: 0 5px;
+
+            .newsletter-title {
+                font-size: 18px;
+            }
+
+            .newsletter-text {
+                font-size: 10px;
+            }
+
+            .newsletter-box {
+                .nbox {
+                    margin: 0 10px;
+                    width: 250px;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media all and (max-width: 380px) {
+    .newsletter {
+        width: 95vw;
+        height: 30vh;
+        margin-top: -35%;
+
+        .newsletter-img {
+            display: none;
+        }
+
+        .newsletter-not-img {
+            width: 100vw;
+            grid-auto-rows: 30px 30px 50px;
+            grid-gap: 5px;
+            margin: 0 5px;
+
+            .newsletter-title {
+                font-size: 18px;
+            }
+
+            .newsletter-text {
+                font-size: 10px;
+            }
+
+            .newsletter-box {
+                .nbox {
+                    margin: 0 10px;
+                    width: 250px;
+                }
+            }
+
+            .newsletter-button {
+
+                margin-left: 10%;
+            }
+        }
+    }
+}
+
+
+
+
+@media all and (max-width: 370px) {
+    .newsletter {
+        width: 95vw;
+        height: 30vh;
+        margin-top: -45%;
+
+        .newsletter-img {
+            display: none;
+        }
+
+        .newsletter-not-img {
+            width: 100vw;
+            grid-auto-rows: 30px 30px 50px;
+
+            margin: 0;
+
+            .newsletter-title {
+                font-size: 16px;
+            }
+
+            .newsletter-text {
+                font-size: 10px;
+                margin: 5px;
+            }
+
+            .newsletter-box {
+                .nbox {
+                    margin: 10px;
+                    width: 200px;
+                }
+            }
+
+            .newsletter-button {
+                margin-top: 10px;
+                margin-left: 10%;
+            }
+        }
+    }
+}
+
+
+
+
+@media all and (min-width: 1400px) {
+    .newsletter {
+        width: 90vw;
+        height: 400px;
+
+        .newsletter-not-img {
+            .newsletter-title {
+                font-size: 30px;
+            }
+
+            .newsletter-text {
+                font-size: 22px;
+                margin: 5px;
+            }
+
+            .newsletter-box {
+                .nbox {
+                    margin-left: 40%;
+                    width: 400px;
+                }
+            }
+
+            .newsletter-button {
+
+                margin-left: 40%;
+            }
+        }
+    }
+}

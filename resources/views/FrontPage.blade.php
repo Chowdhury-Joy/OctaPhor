@@ -199,5 +199,30 @@
 </section>
 
 
+<section class="newsletter">
+
+    <div class="newsletter-img"><img src="img\email.png" alt="email icon"></div>
+
+
+    <div class="newsletter-not-img">
+        <div class="newsletter-title">SUBSCRIBE TO OUR NEWSLETTER</div>
+
+        <div class="newsletter-text">To get regular Update, Tips and Promotional offer, Subscribe NOW.</div>
+
+
+        <div class="newsletter-box">     
+            <textarea name="newsletter-box" class="nbox" name="newsletter-box" placeholder="Your Email" required></textarea></div>
+
+        <div class="newsletter-button">   <i class="far fa-paper-plane"></i>  </div>
+    
+    </div>
+
+    
+   
+</section>
+
+
+
+
 @endsection
 @extends('layouts.footer')
