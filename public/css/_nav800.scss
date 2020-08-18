@@ -3,7 +3,7 @@
     /* MENU STYLES */
     .colortop {
         background-color: #EEE;
-        position: relative;
+        position: fixed;
         max-width: 120rem;
         width: 100%;
         top: 0;
@@ -26,7 +26,9 @@
             }
 
             .main-nav {
-                margin: 0 auto;
+                margin: -30px auto;
+                font-size: 1rem;
+                line-height: 0rem;
 
                 ul {
                     li {
@@ -106,32 +108,77 @@
     }
 }
 
-
-@media screen and (max-width: 437px) {
+@media screen and (max-width: 346px) {
 
     /* MENU STYLES */
     .topbar {
+        .company {
+            margin: 10px auto;
+        }
+
         .main-nav {
-
-            margin: 0 auto;
-            font-size: 0.7rem;
-
             ul {
+                &:first-child {
+                    padding-left: 0px;
+                }
 
                 li {
-                    padding: 10px;
+                    // margin: 0 auto;
+                    font-size: 0.7rem;
+                    padding: 20px;
+                    margin: auto;
 
                     a {
+                        &:first-child {
+                            margin-left: -40px;
+                        }
 
-                        letter-spacing: 0;
+                        &:last-child {
+                            margin-right: 0px;
+                        }
                     }
                 }
             }
-        }
 
-        .social-nav {
-            display: none;
+            ul li a:first-child {
+                margin-left: 0;
+            }
         }
-
     }
 }
+
+
+// @media screen and (max-width: 437px) {
+//     .colortop {
+
+//         /* MENU STYLES */
+//         .topbar {
+//             .main-nav {
+
+//                 margin: 0 auto;
+//                 font-size: 0.7rem;
+//                 font-weight: 400;
+
+//                 ul {
+//                     li {
+//                         padding: 10px;
+
+//                         a {
+//                             letter-spacing: 0;
+//                         }
+//                     }
+
+//                     a {
+//                         &:first-child {
+//                             margin-left: -40px;
+//                         }
+//                     }
+//                 }
+
+//                 .social-nav {
+//                     display: none;
+//                 }
+
+//             }
+//         }
+//     }

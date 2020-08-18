@@ -1,0 +1,148 @@
+.services-overview {
+    text-align: center;
+
+    .services-text {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 100vh;
+        margin: 10px 0;
+
+        .services-text-1 {
+            font-family: 'Raleway',
+                sans-serif;
+            font-size: 66px;
+            margin: 5px auto;
+            // text-align: center;
+            //!! "margin value" is mendatory here
+        }
+
+        .services-text-2 {
+            font-family: 'Raleway',
+                sans-serif;
+            font-size: 33px;
+            max-width: 1600px;
+            margin: 0 auto 20px;
+
+            //!! "margin value" is mendatory here
+        }
+
+        .clients {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(5%, 15%));
+            justify-content: center;
+
+
+            img {
+                display: block;
+                width: 80%;
+                max-height: 80%;
+
+            }
+        }
+    }
+
+    .services-container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 100px;
+
+
+        .service-subject {
+            display: grid;
+            grid-gap: 20px;
+            height: 80vh;
+            grid-template-columns: 60% auto;
+            grid-template-rows: 100px 150px 100px;
+            //!!IMPORTANT PART
+            grid-template-areas: "title image"
+                "description image"
+                "button image";
+            margin: auto 20px;
+
+            .service-not-img {
+                .service-title {
+                    font-family: 'Raleway',
+                        sans-serif;
+                    font-size: 40px;
+                    grid-area: title;
+                }
+
+                .service-description {
+                    font-family: 'Raleway',
+                        sans-serif;
+                    grid-area: description;
+                    font-size: 150%;
+                }
+
+                .service-button {
+                    font-family: 'Raleway',
+                        sans-serif;
+                    grid-area: button;
+                    display: flex;
+                    justify-content: center;
+                    //!! To make both button at center
+                    margin: 0 auto;
+
+
+                    .service-button-1 {
+                        font-family: 'Raleway',
+                            sans-serif;
+                        padding: 10px 20px;
+                        background-color: rgb(167, 124, 67);
+                        font-size: 25px;
+                        color: white;
+                        border: none;
+                        text-align: center;
+                        text-decoration: none;
+                        display: inline-block;
+                        cursor: pointer;
+                    }
+
+                    .service-button-2 {
+                        font-family: 'Raleway',
+                            sans-serif;
+                        margin-left: 40px;
+                        padding: 10px 20px;
+                        background-color: rgb(192, 133, 55);
+                        font-size: 25px;
+                        color: white;
+                        border: none;
+                        text-align: center;
+                        text-decoration: none;
+                        display: inline-block;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .service-img {
+                grid-area: image;
+                justify-self: end;
+
+                img {
+                    height: 90%;
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media all and (max-width:1100px) {
+
+    .services-overview {
+
+
+        .services-container {
+
+            .service-subject {
+                display: grid;
+                grid-gap: 20px;
+                height: 45vh;
+            }
+        }
+    }
+}

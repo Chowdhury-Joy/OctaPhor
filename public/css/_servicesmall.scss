@@ -1,0 +1,276 @@
+@media all and (max-width:800px) {
+    .services-overview {
+        text-align: center;
+
+        .services-text {
+
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            height: 50vh;
+            margin: 40px 0;
+
+            .services-text-1 {
+                //??Our service
+                font-family: 'Raleway',
+                    sans-serif;
+                font-size: 30px;
+                margin: 5px auto;
+                // text-align: center;
+                //!! "margin value" is mendatory here
+            }
+
+            .services-text-2 {
+                //??Since 2015 octaphor......
+                font-family: 'Raleway',
+                    sans-serif;
+                font-size: 20px;
+                max-width: 800px;
+                margin: 0 auto 20px;
+
+                //!! "margin value" is mendatory here
+            }
+
+            .clients {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(5%, 20%));
+                // justify-content: center;
+
+
+
+                img {
+                    display: block;
+                    width: 70%;
+                    max-height: 80%;
+                    max-width: 800px;
+                    margin: 0 auto;
+
+                }
+            }
+        }
+
+        .services-container {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 100px;
+
+
+
+            .service-subject {
+                //?? Fulll layouts
+                display: grid;
+
+                height: 95vh;
+                grid-template-columns: auto;
+                ;
+                grid-template-rows: 100px 150px 500px 100px;
+                //!!IMPORTANT PART
+                grid-template-areas: "title"
+                    "description"
+                    "image"
+                    "button";
+
+                .service-not-img {
+                    .service-title {
+                        font-family: 'Raleway',
+                            sans-serif;
+                        font-size: 30px;
+                        font-weight: 900;
+                        grid-area: title;
+                    }
+
+                    .service-description {
+                        font-family: 'Raleway',
+                            sans-serif;
+                        grid-area: description;
+                        font-size: 25px;
+                    }
+
+                    .service-button {
+                        font-family: 'Raleway',
+                            sans-serif;
+                        grid-area: button;
+                        display: flex;
+                        justify-content: center;
+                        //!! To make both button at center
+                        position: relative;
+                        margin: 600px auto 0;
+
+                        .service-button-1 {
+                            padding: 10px solid burlywood;
+                            background: solid burlywood;
+                            font-size: 20px;
+                        }
+
+                        .service-button-2 {
+                            font-size: 20px;
+                            margin-left: 40px;
+                            color: white;
+                        }
+                    }
+                }
+
+                .service-img {
+                    grid-area: image;
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        margin: -20px auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media all and (max-width:500px) {
+    .services-overview {
+        text-align: center;
+
+        .services-text {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            height: 40vh;
+            margin: 40px 0;
+
+            .services-text-1 {
+                font-family: 'Raleway',
+                    sans-serif;
+                font-size: 20px;
+                margin: 5px auto;
+                // text-align: center;
+                //!! "margin value" is mendatory here
+            }
+
+            .services-text-2 {
+                font-family: 'Raleway',
+                    sans-serif;
+                font-size: 16px;
+                max-width: 500px;
+                margin: 0 auto 20px;
+
+                //!! "margin value" is mendatory here
+            }
+
+            .clients {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(5%, 15%));
+                justify-content: center;
+
+
+                img {
+                    display: block;
+                    width: 80%;
+                    max-height: 80%;
+
+                }
+            }
+        }
+
+        .services-container {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 100px;
+
+
+
+            .service-subject {
+                display: grid;
+                grid-gap: 20px;
+                height: 70vh;
+                grid-template-columns: auto;
+                grid-template-rows: 100px 150px 400px 100px;
+                //!!IMPORTANT PART
+                grid-template-areas: "title"
+                    "description"
+                    "image"
+                    "button";
+
+
+                // margin: 0;
+                margin: -100px 5px 0;
+
+                .service-not-img {
+
+
+                    .service-title {
+                        font-family: 'Raleway',
+                            sans-serif;
+                        font-size: 20px;
+                        grid-area: title;
+                    }
+
+                    .service-description {
+                        font-family: 'Raleway',
+                            sans-serif;
+                        grid-area: description;
+                        font-size: 80%;
+                    }
+
+                    .service-button {
+                        font-family: 'Raleway',
+                            sans-serif;
+                        grid-area: button;
+                        display: flex;
+                        justify-content: center;
+                        //!! To make both button at center
+                        margin: 0 auto;
+
+                        .service-button-1 {
+                            padding: 10px solid burlywood;
+                            background: solid burlywood;
+                            font-size: 15px;
+
+                        }
+
+                        .service-button-2 {
+                            font-size: 15px;
+                            margin-left: 40px;
+                            color: white;
+                        }
+                    }
+                }
+
+                .service-img {
+                    grid-area: image;
+
+                    img {
+                        height: 50%;
+                        width: 80%;
+                        margin-top: -80px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media all and (max-width: 375px) {
+    .services-overview {
+        .services-container {
+            .service-subject {
+                height: 80vh;
+            }
+        }
+    }
+
+}
+
+
+
+@media all and (max-width: 335px) {
+    .services-overview {
+        .services-container {
+            .service-subject {
+                height: 100vh;
+            }
+        }
+    }
+
+}

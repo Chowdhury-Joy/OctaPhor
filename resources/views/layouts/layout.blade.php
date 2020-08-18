@@ -19,7 +19,7 @@
         {{-- For google font --}}
         <link href="https://fonts.googleapis.com/css2?family=Iceberg&family=Nunito&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Acme&family=Roboto&family=Rosario&family=Sanchez&display=swap" rel="stylesheet">
-      
+      <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> 
         
         <title>Laravel</title>
 
@@ -34,6 +34,6 @@
     <body>
 
 @yield('navmain')
-
+@yield('footer')
     </body>
     </html>

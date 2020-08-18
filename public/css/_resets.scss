@@ -1,19 +1,22 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html,
 body {
-  padding: 0;
-  margin : 0;
+    font-family: 'Raleway',
+        sans-serif;
+    padding: 0;
+    margin: 0;
+    color: #000;
 }
 
 //!!Laptop+
 
 .except-footer-container {
-  width    : 90%;
-  max-width: 1200px;
-  margin   : auto;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
 }
 
 

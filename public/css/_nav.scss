@@ -3,21 +3,21 @@ a {
 }
 
 .colortop {
-    background-color: #EEE;
     position: fixed;
     max-width: 120rem;
-    width: 90%;
+    width: 80%;
     top: 0;
     z-index: 1;
+    margin: 0 auto;
 
 
     .topbar {
+        background-color: #EEE;
         //!! let's put a flexbox here to align company name and logo with mainnav
-        width: 95vw;
+        width: 100vw;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
-        position: fixed;
 
         .company {
             display: flex;
@@ -79,6 +79,7 @@ a {
                         margin: 0 1rem;
                         position: relative;
                         letter-spacing: 2px;
+                        color: #000000;
 
                         &:hover {
                             //!!Final hover effect
@@ -96,6 +97,7 @@ a {
             animation: slideIn .5s forwards;
 
             ul {
+                padding-right: 40px;
                 display: flex;
 
                 li {

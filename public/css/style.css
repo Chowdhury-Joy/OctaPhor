@@ -5,8 +5,10 @@
 
 html,
 body {
+  font-family: 'Raleway', sans-serif;
   padding: 0;
   margin: 0;
+  color: #000;
 }
 
 .except-footer-container {
@@ -20,16 +22,17 @@ a {
 }
 
 .colortop {
-  background-color: #EEE;
   position: fixed;
   max-width: 120rem;
-  width: 90%;
+  width: 80%;
   top: 0;
   z-index: 1;
+  margin: 0 auto;
 }
 
 .colortop .topbar {
-  width: 95vw;
+  background-color: #EEE;
+  width: 100vw;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -37,7 +40,6 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: fixed;
 }
 
 .colortop .topbar .company {
@@ -121,6 +123,7 @@ a {
   margin: 0 1rem;
   position: relative;
   letter-spacing: 2px;
+  color: #000000;
 }
 
 .colortop .topbar .main-nav ul li a:hover {
@@ -135,6 +138,7 @@ a {
 }
 
 .colortop .topbar .social-nav ul {
+  padding-right: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -153,7 +157,7 @@ a {
   /* MENU STYLES */
   .colortop {
     background-color: #EEE;
-    position: relative;
+    position: fixed;
     max-width: 120rem;
     width: 100%;
     top: 0;
@@ -178,7 +182,9 @@ a {
     font-size: 1.5rem;
   }
   .colortop .topbar .main-nav {
-    margin: 0 auto;
+    margin: -30px auto;
+    font-size: 1rem;
+    line-height: 0rem;
   }
   .colortop .topbar .main-nav ul li {
     padding: 30px;
@@ -225,20 +231,27 @@ a {
   }
 }
 
-@media screen and (max-width: 437px) {
+@media screen and (max-width: 346px) {
   /* MENU STYLES */
-  .topbar .main-nav {
-    margin: 0 auto;
-    font-size: 0.7rem;
+  .topbar .company {
+    margin: 10px auto;
+  }
+  .topbar .main-nav ul:first-child {
+    padding-left: 0px;
   }
   .topbar .main-nav ul li {
-    padding: 10px;
+    font-size: 0.7rem;
+    padding: 20px;
+    margin: auto;
   }
-  .topbar .main-nav ul li a {
-    letter-spacing: 0;
+  .topbar .main-nav ul li a:first-child {
+    margin-left: -40px;
   }
-  .topbar .social-nav {
-    display: none;
+  .topbar .main-nav ul li a:last-child {
+    margin-right: 0px;
+  }
+  .topbar .main-nav ul li a:first-child {
+    margin-left: 0;
   }
 }
 
@@ -250,6 +263,7 @@ a {
   background-size: cover;
   position: relative;
   width: auto;
+  overflow: hidden;
 }
 
 .header .header-text {
@@ -261,8 +275,6 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: absolute;
-  margin: 220px 100px;
 }
 
 .header .header-text h5 {
@@ -270,8 +282,8 @@ a {
   position: absolute;
   width: 150px;
   height: 44px;
-  left: 15px;
-  top: -50px;
+  left: 9%;
+  top: 36%;
   font-family: 'Rosario', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -286,8 +298,8 @@ a {
   position: absolute;
   width: 404px;
   height: 82px;
-  left: -15px;
-  top: -15px;
+  left: 7%;
+  top: 40%;
   font-family: 'Sanchez', serif;
   font-style: normal;
   font-weight: normal;
@@ -303,8 +315,8 @@ a {
   position: absolute;
   width: 140px;
   height: 42px;
-  left: 220px;
-  top: 55px;
+  left: 24%;
+  top: 52%;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -318,8 +330,8 @@ a {
   position: absolute;
   width: 350px;
   height: 2px;
-  left: 190px;
-  top: 350px;
+  left: 14%;
+  top: 60%;
   font-family: 'Acme', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -335,8 +347,8 @@ a {
   position: absolute;
   width: 579px;
   height: 2px;
-  left: 150px;
-  top: 368px;
+  left: 12%;
+  top: 64%;
   font-family: 'Acme', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -349,7 +361,7 @@ a {
 
 .header .header-text2 h1 {
   /* WITH US */
-  position: absolute;
+  position: relative;
   visibility: hidden;
   width: 93px;
   height: 2px;
@@ -363,6 +375,122 @@ a {
   /* identical to box height, or 7% */
   letter-spacing: 0.15em;
   color: #FFFFFF;
+}
+
+@media all and (max-width: 1400px) {
+  .header .header-image {
+    background-image: url("/img/Agency header 01 large.png");
+    background-color: #cccccc;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: auto;
+    overflow: hidden;
+  }
+  .header .header-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header .header-text h5 {
+    /* WE ARE */
+    position: absolute;
+    width: 150px;
+    height: 44px;
+    left: 9%;
+    top: 36%;
+    font-family: 'Rosario', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 44px;
+    /* identical to box height */
+    color: #000000;
+  }
+  .header .header-text h3 {
+    /* CREATIVE */
+    position: absolute;
+    width: 404px;
+    height: 82px;
+    left: 7%;
+    top: 40%;
+    font-family: 'Sanchez', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 82px;
+    /* identical to box height */
+    letter-spacing: 0.155em;
+    color: #000000;
+  }
+  .header .header-text h1 {
+    /* AGENCY */
+    position: absolute;
+    width: 140px;
+    height: 42px;
+    left: 24%;
+    top: 50%;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+  }
+  .header .header-text2 h5 {
+    /* GROW &NURTURE */
+    position: absolute;
+    width: 350px;
+    height: 2px;
+    left: 14%;
+    top: 63.5%;
+    font-family: 'Acme', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1px;
+    /* identical to box height, or 8% */
+    letter-spacing: 0.15em;
+    color: #FFFFFF;
+  }
+  .header .header-text2 h3 {
+    /* THE IDEAS YOU HAVE */
+    position: absolute;
+    width: 579px;
+    height: 2px;
+    left: 12%;
+    top: 67%;
+    font-family: 'Acme', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1px;
+    /* identical to box height, or 6% */
+    letter-spacing: 0.15em;
+    color: #FFFFFF;
+  }
+  .header .header-text2 h1 {
+    /* WITH US */
+    position: relative;
+    visibility: hidden;
+    width: 93px;
+    height: 2px;
+    left: 165px;
+    top: 390px;
+    font-family: 'Acme', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1px;
+    /* identical to box height, or 7% */
+    letter-spacing: 0.15em;
+    color: #FFFFFF;
+  }
 }
 
 @media all and (max-width: 1100px) {
@@ -386,13 +514,398 @@ a {
 
 @media all and (max-width: 800px) {
   .header .header-image {
-    margin-top: 160px;
+    margin-top: 100px;
   }
 }
 
 @media all and (max-width: 440px) {
   .header .header-image {
-    margin-top: 140px;
+    margin-top: 100px;
+  }
+}
+
+.services-overview {
+  text-align: center;
+}
+
+.services-overview .services-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  height: 100vh;
+  margin: 10px 0;
+}
+
+.services-overview .services-text .services-text-1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 66px;
+  margin: 5px auto;
+}
+
+.services-overview .services-text .services-text-2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 33px;
+  max-width: 1600px;
+  margin: 0 auto 20px;
+}
+
+.services-overview .services-text .clients {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(5%, 15%))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(5%, 15%));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.services-overview .services-text .clients img {
+  display: block;
+  width: 80%;
+  max-height: 80%;
+}
+
+.services-overview .services-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.services-overview .services-container .service-subject {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  height: 80vh;
+  -ms-grid-columns: 60% auto;
+      grid-template-columns: 60% auto;
+  -ms-grid-rows: 100px 150px 100px;
+      grid-template-rows: 100px 150px 100px;
+      grid-template-areas: "title image" "description image" "button image";
+  margin: auto 20px;
+}
+
+.services-overview .services-container .service-subject .service-not-img .service-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: title;
+}
+
+.services-overview .services-container .service-subject .service-not-img .service-description {
+  font-family: 'Raleway', sans-serif;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: description;
+  font-size: 150%;
+}
+
+.services-overview .services-container .service-subject .service-not-img .service-button {
+  font-family: 'Raleway', sans-serif;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: button;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+
+.services-overview .services-container .service-subject .service-not-img .service-button .service-button-1 {
+  font-family: 'Raleway', sans-serif;
+  padding: 10px 20px;
+  background-color: #a77c43;
+  font-size: 25px;
+  color: white;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.services-overview .services-container .service-subject .service-not-img .service-button .service-button-2 {
+  font-family: 'Raleway', sans-serif;
+  margin-left: 40px;
+  padding: 10px 20px;
+  background-color: #c08537;
+  font-size: 25px;
+  color: white;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.services-overview .services-container .service-subject .service-img {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
+  grid-area: image;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.services-overview .services-container .service-subject .service-img img {
+  height: 90%;
+  width: 90%;
+}
+
+@media all and (max-width: 1100px) {
+  .services-overview .services-container .service-subject {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 20px;
+    height: 45vh;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .services-overview {
+    text-align: center;
+  }
+  .services-overview .services-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    height: 50vh;
+    margin: 40px 0;
+  }
+  .services-overview .services-text .services-text-1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    margin: 5px auto;
+  }
+  .services-overview .services-text .services-text-2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto 20px;
+  }
+  .services-overview .services-text .clients {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(5%, 20%))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(5%, 20%));
+  }
+  .services-overview .services-text .clients img {
+    display: block;
+    width: 70%;
+    max-height: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .services-overview .services-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 100px;
+  }
+  .services-overview .services-container .service-subject {
+    display: -ms-grid;
+    display: grid;
+    height: 95vh;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: 100px 150px 500px 100px;
+        grid-template-rows: 100px 150px 500px 100px;
+        grid-template-areas: "title" "description" "image" "button";
+  }
+  .services-overview .services-container .service-subject .service-not-img .service-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: title;
+  }
+  .services-overview .services-container .service-subject .service-not-img .service-description {
+    font-family: 'Raleway', sans-serif;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: description;
+    font-size: 25px;
+  }
+  .services-overview .services-container .service-subject .service-not-img .service-button {
+    font-family: 'Raleway', sans-serif;
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: button;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    margin: 600px auto 0;
+  }
+  .services-overview .services-container .service-subject .service-not-img .service-button .service-button-1 {
+    padding: 10px solid burlywood;
+    background: solid burlywood;
+    font-size: 20px;
+  }
+  .services-overview .services-container .service-subject .service-not-img .service-button .service-button-2 {
+    font-size: 20px;
+    margin-left: 40px;
+    color: white;
+  }
+  .services-overview .services-container .service-subject .service-img {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: image;
+  }
+  .services-overview .services-container .service-subject .service-img img {
+    height: 100%;
+    width: 100%;
+    margin: -20px auto;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .services-overview {
+    text-align: center;
+  }
+  .services-overview .services-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    height: 40vh;
+    margin: 40px 0;
+  }
+  .services-overview .services-text .services-text-1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    margin: 5px auto;
+  }
+  .services-overview .services-text .services-text-2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto 20px;
+  }
+  .services-overview .services-text .clients {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(5%, 15%))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(5%, 15%));
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .services-overview .services-text .clients img {
+    display: block;
+    width: 80%;
+    max-height: 80%;
+  }
+  .services-overview .services-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 100px;
+  }
+  .services-overview .services-container .service-subject {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 20px;
+    height: 70vh;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: 100px 150px 400px 100px;
+        grid-template-rows: 100px 150px 400px 100px;
+        grid-template-areas: "title" "description" "image" "button";
+    margin: -100px 5px 0;
+  }
+  .services-overview .services-container .service-subject .service-not-img .service-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: title;
+  }
+  .services-overview .services-container .service-subject .service-not-img .service-description {
+    font-family: 'Raleway', sans-serif;
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: description;
+    font-size: 80%;
+  }
+  .services-overview .services-container .service-subject .service-not-img .service-button {
+    font-family: 'Raleway', sans-serif;
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: button;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+  }
+  .services-overview .services-container .service-subject .service-not-img .service-button .service-button-1 {
+    padding: 10px solid burlywood;
+    background: solid burlywood;
+    font-size: 15px;
+  }
+  .services-overview .services-container .service-subject .service-not-img .service-button .service-button-2 {
+    font-size: 15px;
+    margin-left: 40px;
+    color: white;
+  }
+  .services-overview .services-container .service-subject .service-img {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: image;
+  }
+  .services-overview .services-container .service-subject .service-img img {
+    height: 50%;
+    width: 80%;
+    margin-top: -80px;
+  }
+}
+
+@media all and (max-width: 375px) {
+  .services-overview .services-container .service-subject {
+    height: 80vh;
+  }
+}
+
+@media all and (max-width: 335px) {
+  .services-overview .services-container .service-subject {
+    height: 100vh;
   }
 }
 
@@ -408,6 +921,7 @@ a {
   margin-top: 10px;
   background-color: #2E2E54;
   color: #fff;
+  margin-top: -150px;
 }
 
 .footer-container .fotr-main {
@@ -420,7 +934,16 @@ a {
 }
 
 .footer-container .fotr-main .fotr-contract {
-  width: 33%;
+  width: 50%;
+}
+
+.footer-container .fotr-main .fotr-help {
+  width: 50%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer-container .fotr-main .fotr-help a {
@@ -428,24 +951,7 @@ a {
   color: rgba(255, 255, 255, 0.911);
 }
 
-.footer-container .fotr-main .Newslatter {
-  width: 33%;
-}
-
-.footer-container .fotr-main .Newslatter .subscribe-box {
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
-.footer-container .fotr-right {
+.footer-container .fotr-rights {
   max-width: 800px;
   margin: 0 auto;
 }
@@ -479,26 +985,21 @@ a {
   .footer-container .fotr-main .fotr-contract {
     width: 90%;
   }
+  .footer-container .fotr-main .fotr-help {
+    width: 90%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
   .footer-container .fotr-main .fotr-help a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.911);
   }
-  .footer-container .fotr-main .Newslatter {
-    width: 90%;
-  }
-  .footer-container .fotr-right {
+  .footer-container .fotr-rights {
     width: 100%;
+    font-size: 20px;
     max-width: 1100px;
-    margin: 0 auto;
+    margin: 25px auto;
   }
-}
-
-html, body {
-  background-color: #fff;
-  color: #636b6f;
-  font-family: 'Nunito', sans-serif;
-  font-weight: 00;
-  height: 100vh;
-  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */
