@@ -1038,6 +1038,27 @@ a {
   }
 }
 
+@media all and (min-width: 1400px) {
+  .newsletter {
+    width: 90vw;
+    height: 400px;
+  }
+  .newsletter .newsletter-not-img .newsletter-title {
+    font-size: 30px;
+  }
+  .newsletter .newsletter-not-img .newsletter-text {
+    font-size: 22px;
+    margin: 5px;
+  }
+  .newsletter .newsletter-not-img .newsletter-box .nbox {
+    margin-left: 40%;
+    width: 400px;
+  }
+  .newsletter .newsletter-not-img .newsletter-button {
+    margin-left: 40%;
+  }
+}
+
 @media all and (max-width: 800px) {
   .newsletter {
     width: 95vw;
@@ -1143,27 +1164,6 @@ a {
   .newsletter .newsletter-not-img .newsletter-button {
     margin-top: 10px;
     margin-left: 10%;
-  }
-}
-
-@media all and (min-width: 1400px) {
-  .newsletter {
-    width: 90vw;
-    height: 400px;
-  }
-  .newsletter .newsletter-not-img .newsletter-title {
-    font-size: 30px;
-  }
-  .newsletter .newsletter-not-img .newsletter-text {
-    font-size: 22px;
-    margin: 5px;
-  }
-  .newsletter .newsletter-not-img .newsletter-box .nbox {
-    margin-left: 40%;
-    width: 400px;
-  }
-  .newsletter .newsletter-not-img .newsletter-button {
-    margin-left: 40%;
   }
 }
 

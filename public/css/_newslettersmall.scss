@@ -1,0 +1,150 @@
+@media all and (max-width: 800px) {
+    .newsletter {
+        width: 95vw;
+
+        .newsletter-img {
+            width: 25vw;
+
+            img {
+                /* email 1 */
+
+                // position: absolute;
+                width: 60%;
+                height: 30%;
+
+
+            }
+        }
+
+        .newsletter-not-img {
+            width: 75vw;
+
+
+            .newsletter-text {
+
+                font-size: 14px;
+
+            }
+        }
+    }
+}
+
+
+
+@media all and (max-width: 500px) {
+    .newsletter {
+        width: 95vw;
+        height: 30vh;
+        margin-top: -35%;
+
+        .newsletter-img {
+            display: none;
+        }
+
+        .newsletter-not-img {
+            width: 100vw;
+            grid-auto-rows: 30px 30px 50px;
+            grid-gap: 5px;
+            margin: 0 5px;
+
+            .newsletter-title {
+                font-size: 18px;
+            }
+
+            .newsletter-text {
+                font-size: 10px;
+            }
+
+            .newsletter-box {
+                .nbox {
+                    margin: 0 10px;
+                    width: 250px;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media all and (max-width: 380px) {
+    .newsletter {
+        width: 95vw;
+        height: 30vh;
+        margin-top: -35%;
+
+        .newsletter-img {
+            display: none;
+        }
+
+        .newsletter-not-img {
+            width: 100vw;
+            grid-auto-rows: 30px 30px 50px;
+            grid-gap: 5px;
+            margin: 0 5px;
+
+            .newsletter-title {
+                font-size: 18px;
+            }
+
+            .newsletter-text {
+                font-size: 10px;
+            }
+
+            .newsletter-box {
+                .nbox {
+                    margin: 0 10px;
+                    width: 250px;
+                }
+            }
+
+            .newsletter-button {
+
+                margin-left: 10%;
+            }
+        }
+    }
+}
+
+
+
+
+@media all and (max-width: 370px) {
+    .newsletter {
+        width: 95vw;
+        height: 30vh;
+        margin-top: -45%;
+
+        .newsletter-img {
+            display: none;
+        }
+
+        .newsletter-not-img {
+            width: 100vw;
+            grid-auto-rows: 30px 30px 50px;
+
+            margin: 0;
+
+            .newsletter-title {
+                font-size: 16px;
+            }
+
+            .newsletter-text {
+                font-size: 10px;
+                margin: 5px;
+            }
+
+            .newsletter-box {
+                .nbox {
+                    margin: 10px;
+                    width: 200px;
+                }
+            }
+
+            .newsletter-button {
+                margin-top: 10px;
+                margin-left: 10%;
+            }
+        }
+    }
+}
