@@ -1063,15 +1063,26 @@ a {
     margin: 5px;
   }
   .newsletter .newsletter-not-img .newsletter-box .nbox {
-    margin-left: 55%;
+    margin-left: 45%;
     width: 400px;
   }
   .newsletter .newsletter-not-img .newsletter-button {
-    margin-left: 30%;
+    margin-left: 42%;
   }
 }
 
 @media all and (max-width: 1100px) {
+  .newsletter {
+    width: 90vw;
+  }
+  .newsletter .newsletter-not-img .newsletter-box .nbox {
+    width: 280px;
+    height: 35px;
+    margin-left: 40%;
+  }
+}
+
+@media all and (max-width: 835px) {
   .newsletter {
     width: 90vw;
   }
