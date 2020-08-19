@@ -316,7 +316,7 @@ a {
   width: 140px;
   height: 42px;
   left: 24%;
-  top: 52%;
+  top: 48%;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -498,7 +498,7 @@ a {
     background-image: url("/img/agency header01 small02.png");
     background-color: #cccccc;
     height: 50vh;
-    margin-top: 180px;
+    margin-top: 68px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -579,6 +579,8 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 100px;
+  top: -20%;
+  line-height: 1.2;
 }
 
 .services-overview .services-container .service-subject {
@@ -591,7 +593,7 @@ a {
   -ms-grid-rows: 100px 150px 100px;
       grid-template-rows: 100px 150px 100px;
       grid-template-areas: "title image" "description image" "button image";
-  margin: auto 20px;
+  margin: 10% 20px auto;
 }
 
 .services-overview .services-container .service-subject .service-not-img .service-title {
@@ -608,7 +610,7 @@ a {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: description;
-  font-size: 150%;
+  font-size: 20px;
 }
 
 .services-overview .services-container .service-subject .service-not-img .service-button {
@@ -627,9 +629,9 @@ a {
 
 .services-overview .services-container .service-subject .service-not-img .service-button .service-button-1 {
   font-family: 'Raleway', sans-serif;
-  padding: 10px 20px;
+  padding: 10px;
   background-color: #a77c43;
-  font-size: 25px;
+  font-size: 22px;
   color: white;
   border: none;
   text-align: center;
@@ -641,9 +643,9 @@ a {
 .services-overview .services-container .service-subject .service-not-img .service-button .service-button-2 {
   font-family: 'Raleway', sans-serif;
   margin-left: 40px;
-  padding: 10px 20px;
+  padding: 10px;
   background-color: #c08537;
-  font-size: 25px;
+  font-size: 22px;
   color: white;
   border: none;
   text-align: center;
@@ -667,15 +669,27 @@ a {
 }
 
 @media all and (max-width: 1100px) {
+  .services-overview .services-text {
+    height: 50vh;
+  }
   .services-overview .services-container .service-subject {
     display: -ms-grid;
     display: grid;
     grid-gap: 20px;
     height: 45vh;
   }
+  .services-overview .services-container .service-subject .service-not-img .service-description p {
+    font-size: 16px;
+  }
+  .services-overview .services-container .service-subject .service-not-img .service-button .service-button-1 {
+    font-size: 20px;
+  }
+  .services-overview .services-container .service-subject .service-not-img .service-button .service-button-2 {
+    font-size: 20px;
+  }
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 900px) {
   .services-overview {
     text-align: center;
   }
@@ -688,7 +702,7 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
-    height: 50vh;
+    height: 45vh;
     margin: 40px 0;
   }
   .services-overview .services-text .services-text-1 {
@@ -728,11 +742,11 @@ a {
   .services-overview .services-container .service-subject {
     display: -ms-grid;
     display: grid;
-    height: 95vh;
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
-    -ms-grid-rows: 100px 150px 500px 100px;
-        grid-template-rows: 100px 150px 500px 100px;
+    height: 75vh;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 40px 110px 400px 60px;
+        grid-template-rows: 40px 110px 400px 60px;
         grid-template-areas: "title" "description" "image" "button";
   }
   .services-overview .services-container .service-subject .service-not-img .service-title {
@@ -763,7 +777,7 @@ a {
         -ms-flex-pack: center;
             justify-content: center;
     position: relative;
-    margin: 600px auto 0;
+    margin: 65% 100px 0;
   }
   .services-overview .services-container .service-subject .service-not-img .service-button .service-button-1 {
     padding: 10px solid burlywood;
@@ -781,9 +795,9 @@ a {
     grid-area: image;
   }
   .services-overview .services-container .service-subject .service-img img {
-    height: 100%;
-    width: 100%;
-    margin: -20px auto;
+    height: 400px;
+    width: 700px;
+    margin-right: 50px;
   }
 }
 
@@ -842,7 +856,7 @@ a {
     display: -ms-grid;
     display: grid;
     grid-gap: 20px;
-    height: 70vh;
+    height: 80vh;
     -ms-grid-columns: auto;
         grid-template-columns: auto;
     -ms-grid-rows: 100px 150px 400px 100px;
@@ -864,6 +878,9 @@ a {
     -ms-grid-column: 1;
     grid-area: description;
     font-size: 80%;
+  }
+  .services-overview .services-container .service-subject .service-not-img .service-description p {
+    font-size: 12px;
   }
   .services-overview .services-container .service-subject .service-not-img .service-button {
     font-family: 'Raleway', sans-serif;
@@ -897,18 +914,20 @@ a {
     height: 50%;
     width: 80%;
     margin-top: -80px;
+    margin-left: 40px;
   }
 }
 
 @media all and (max-width: 375px) {
   .services-overview .services-container .service-subject {
-    height: 80vh;
+    height: 75vh;
+    margin-top: 5px;
   }
 }
 
 @media all and (max-width: 335px) {
   .services-overview .services-container .service-subject {
-    height: 100vh;
+    height: 80vh;
   }
 }
 

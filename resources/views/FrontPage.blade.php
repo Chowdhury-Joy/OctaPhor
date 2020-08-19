@@ -53,12 +53,12 @@
             
         <div class="service-subject">
             <div class="service-not-img">
-                <div class="service-title big-text">
+                <div class="service-title">
                     <p> WEBSITE DEVELOPMENT </p>          
                 </div>
 
 
-                <div class="service-description medium-text">
+                <div class="service-description">
                     <p>OctaPhor offers a vast array of Website Development solutions such as website design, web hosting, content management systems, website maintenance and search engine optimization</p>
                 </div>
 
