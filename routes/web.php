@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('FrontPage');
 });
 
-Auth::routes();
+Route::get('/s1projects', function () {
+    return view('Web-Projects');
+});
+
+// Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

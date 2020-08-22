@@ -7,7 +7,7 @@
 
         {{-- For perticularly this page we don't need signin or register option --}}
 
-        {{-- @auth
+        @auth
                 <a href="{{ url('/home') }}">Home</a>
         @else
         <a href="{{ route('login') }}">Login</a>
@@ -15,7 +15,7 @@
         @if (Route::has('register'))
         <a href="{{ route('register') }}">Register</a>
         @endif
-        @endauth --}}
+        @endauth
     </div>
     @endif
 
@@ -37,8 +37,8 @@
             {{--Check nav.scss --}}
 
             <ul>
-                <li><a href="#">PRICING</a></i></li>
-                <li><a href="#">OUR WORK</a></i></li>
+                <li><a href="#">ABOUT</a></i></li>
+                <li><a href="#">SERVICES</a></i></li>
                 <li><a href="#">BLOG</a></i></li>
                 <li><a href="#">CONTACT</a></li>
             </ul>
@@ -58,6 +58,6 @@
 </section>
     {{--* Topbar section ends  --}}
 
-@yield('content')
+@yield('Frontpage')
 
     @endsection

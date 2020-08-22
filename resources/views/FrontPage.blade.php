@@ -1,6 +1,6 @@
 @extends('layouts.navmain')
 
-@section('content')
+@section('Frontpage')
 
 
 
@@ -65,13 +65,13 @@
                 <div class="service-button">
 
                             <div class="service-button-1">
-                <div>View Projects</div>
+                                <a href="{{ url('/s1projects') }}">View Projects</a>
                             </div>
-
 
                             <div class="service-button-2">
-                <div>Pricing</div>
+                                <a href="{{ url('/s1pricing') }}">Pricing</a>
                             </div>
+
                 </div>
             </div>
                 
@@ -102,13 +102,13 @@
                 <div class="service-button">
 
                             <div class="service-button-1">
-                <div>View Projects</div>
+                                <a href="{{ url('/s2projects') }}">View Projects</a>
                             </div>
-
 
                             <div class="service-button-2">
-                <div>Pricing</div>
+                                <a href="{{ url('/s2pricing') }}">Pricing</a>
                             </div>
+
                 </div>
             </div>
                 
@@ -139,13 +139,13 @@
                 <div class="service-button">
 
                             <div class="service-button-1">
-                <div>View Projects</div>
+                                <a href="{{ url('/s3projects') }}">View Projects</a>
                             </div>
-
 
                             <div class="service-button-2">
-                <div>Pricing</div>
+                                <a href="{{ url('/s3pricing') }}">Pricing</a>
                             </div>
+
                 </div>
             </div>
                 
@@ -175,14 +175,16 @@
                 <div class="service-button">
 
                             <div class="service-button-1">
-                <div>View Projects</div>
+                                <a href="{{ url('/s4projects') }}">View Projects</a>
                             </div>
-
 
                             <div class="service-button-2">
-                <div>Pricing</div>
+                                <a href="{{ url('/s4pricing') }}">Pricing</a>
                             </div>
+
                 </div>
+
+
             </div>
                 
 
