@@ -793,11 +793,11 @@ a {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     grid-area: image;
+    margin: 0 auto;
   }
   .services-overview .services-container .service-subject .service-img img {
     height: 400px;
     width: 700px;
-    margin-right: 50px;
   }
 }
 
