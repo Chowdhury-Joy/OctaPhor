@@ -111,12 +111,12 @@
 
                 .service-img {
                     grid-area: image;
-
+                    margin: 0 auto;
 
                     img {
                         height: 400px;
                         width: 700px;
-                        margin-right: 50px;
+
                     }
                 }
             }
