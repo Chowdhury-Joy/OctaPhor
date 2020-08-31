@@ -48,7 +48,9 @@
             </div>
         </section>
 
-   
+   {{-- Customer section ends here --}}
+
+
     <section class="services-container">
             
         <div class="service-subject">
@@ -85,7 +87,7 @@
 
 
 
-
+{{-- Web dev ends here --}}
 
 
         <div class="service-subject">
@@ -122,7 +124,7 @@
 
 
 
-
+{{-- APP dev ends here --}}
 
 
         <div class="service-subject">
@@ -158,7 +160,7 @@
         </div>
 
 
-
+{{-- GRAPHICS DESIGN ends here --}}
 
         
         <div class="service-subject">
@@ -199,6 +201,9 @@
 
 
 </section>
+
+
+{{-- Digital contents ends here --}}
 
 
 <section class="newsletter">
