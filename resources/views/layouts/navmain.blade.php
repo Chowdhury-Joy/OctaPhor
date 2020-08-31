@@ -39,15 +39,8 @@
             </ul>
         </nav>
 
-        <nav class="social-nav">
-            <ul>
-                <li><i class="fab fa-facebook-square"></i><a href="https://www.facebook.com/OctaPhor"</a></li>
-                <li><i class="fab fa-twitter-square"></i><a href="https://www.twitter.com/OctaPhor"</a></li>
-                <li><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/OctaPhor"></a></li>
-                <li><i class="fab fa-dribbble-square"></i><a href="https://www.dribbble.com/OctaPhor"></a></li>
-
-            </ul>
-        </nav>
+        <a class="txt-hire btn-hire btn-hire-brdr hire-js" href="#"> HIRE US
+        </a>
 
         
     </div>
