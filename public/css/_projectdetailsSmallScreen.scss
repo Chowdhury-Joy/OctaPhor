@@ -1,0 +1,40 @@
+@media all and (max-width: 850px) {
+
+    .project-container {
+        margin: 13% auto 20%;
+
+
+        .project-list {
+
+            display: grid;
+            grid-template-columns: repeat(auto-fit, max(90%));
+            grid-auto-rows: auto;
+            grid-gap: 5%;
+            justify-content: center;
+
+            .project {
+                .project-image {}
+
+                .project-content {}
+
+                img {
+                    width: 100%;
+                    max-height: 400px;
+
+                }
+
+                .project-info {
+                    .project-title {}
+
+                    .project-description {}
+                }
+
+                &:hover {}
+
+                &:active {}
+
+                &:focus {}
+            }
+        }
+    }
+}

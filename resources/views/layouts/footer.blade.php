@@ -1,10 +1,10 @@
 @section('footer')
     
- <footer class="footer-container">
+ <section class="footer-container ">
 
-    <section class="fotr-main">
+    <div class="fotr-main">
 
-      <article class="fotr-contract">
+      <div class="fotr-contract">
 
         <h2>CONTRACT US</h2>
         <div class="address">
@@ -19,12 +19,12 @@
           <p>Email: contract@octaphor.com</p>
         </div>
 
-      </article>
+      </div>
 
       <!--!! Section of fotr-Contract ends here -->
 
 
-      <article class="fotr-help">
+      <div class="fotr-help">
 
         <h2>HELP</h2>
         <div class="returns">
@@ -43,7 +43,7 @@
           <a href="Care Instructions.html">Care Instructions</a>
         </div>
 
-      </article>
+      </div>
 
       <!--!! Section of fotr-help ends here -->
 
@@ -64,14 +64,14 @@
 
       </article>
 --}}
-    </section>
+    </div>
 
 
     
-    <section class="fotr-rights"> All rights will be reserved to OctaPhor &#174;
-    </section>
+    <div class="fotr-rights"> All rights will be reserved to OctaPhor &#174;
+    </div>
 
-  </footer>
+  </section>
 
 
 @endsection

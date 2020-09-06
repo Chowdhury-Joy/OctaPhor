@@ -1,6 +1,10 @@
+//!! scss basic
+
 @import './mixins';
 @import './resets';
 @import './variables';
+
+//!! navbar for home
 
 @import './nav';
 @import './nav800';
@@ -16,4 +20,19 @@
 @import './contact';
 @import './newsletter';
 @import './newslettersmall';
+
+//!! Projects-Details
+
+@import './projectdetails';
+@import './projectdetailsSmallScreen';
+
+
+
+
+
+
+
+
+
+
 @import './footer';

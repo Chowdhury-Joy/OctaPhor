@@ -59,5 +59,6 @@
     {{--* Topbar section ends  --}}
 
 @yield('Frontpage')
+@yield('Web-Projects')
 
     @endsection

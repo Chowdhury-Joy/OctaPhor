@@ -1,0 +1,37 @@
+.project-container {
+    // margin: 5% auto 20%;
+
+
+    .project-list {
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, max(40%));
+
+        grid-gap: 5%;
+        justify-content: center;
+
+        .project {
+            .project-image {}
+
+            .project-content {}
+
+            img {
+                width: 100%;
+                max-height: 400px;
+
+            }
+
+            .project-info {
+                .project-title {}
+
+                .project-description {}
+            }
+
+            &:hover {}
+
+            &:active {}
+
+            &:focus {}
+        }
+    }
+}
